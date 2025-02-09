@@ -20,7 +20,7 @@ variable "db_name" {
 }
 
 variable "monthly_budget_amount" {
-  type = number
+  type    = number
   default = 100
 }
 

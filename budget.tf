@@ -3,6 +3,7 @@ resource "aws_budgets_budget" "monthly" {
   budget_type       = "COST"
   limit_amount      = var.monthly_budget_amount
   time_unit         = "MONTHLY"
+  limit_unit        = "USD"
   time_period_start = "2024-01-09_00:00"
 
   notification {
